@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+</head>
+<body>
+    <h1>All Cats</h1>
+    <ul>
+        <% cats.forEach(function(t) { %>
+            <li>
+                <%= t.cats %>
+                    -
+                <%= t.isLarge ? 'This cat is large' : 'This cat is small' %>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
